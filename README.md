@@ -7,3 +7,6 @@ Spring RESTFul
 -GameCycleC
 
 /Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/bin/
+
+Spring StateMachine
+ref：http://projects.spring.io/spring-statemachine/
