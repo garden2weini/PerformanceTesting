@@ -10,3 +10,4 @@ Spring RESTFul
 
 Spring StateMachine
 ref：http://projects.spring.io/spring-statemachine/
+http://www.jianshu.com/p/326bd3ac2bf2?winzoom=1
