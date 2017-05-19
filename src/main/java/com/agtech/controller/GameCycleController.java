@@ -1,5 +1,6 @@
 package com.agtech.controller;
 
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -10,6 +11,7 @@ import javax.script.ScriptEngineManager;
 
 @RestController
 @RequestMapping("/game")
+//@EnableAutoConfiguration
 public class GameCycleController {
     // GC状态：消除赛, 这个要进缓存-对应gcid
     static Integer[] gcState = {1, 0, 0, 0};

@@ -1,7 +1,21 @@
-package tmp.statemachine;
+package com.agtech.controller.statemachine;
 
-import tmp.statemachine.StateEnum.Events;
-import tmp.statemachine.StateEnum.States;
+import java.util.EnumSet;
+
+import com.agtech.controller.statemachine.StateEnum.Events;
+import com.agtech.controller.statemachine.StateEnum.States;
+import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.statemachine.config.EnableStateMachine;
+import org.springframework.statemachine.config.EnumStateMachineConfigurerAdapter;
+import org.springframework.statemachine.config.builders.StateMachineConfigurationConfigurer;
+import org.springframework.statemachine.config.builders.StateMachineStateConfigurer;
+import org.springframework.statemachine.config.builders.StateMachineTransitionConfigurer;
+import org.springframework.statemachine.listener.StateMachineListener;
+import org.springframework.statemachine.listener.StateMachineListenerAdapter;
+import org.springframework.statemachine.transition.Transition;
 
 /**
  * 创建状态机配置类
@@ -9,6 +23,7 @@ import tmp.statemachine.StateEnum.States;
  */
 @Configuration
 @EnableStateMachine
+//@EnableAutoConfiguration
 public class StateMachineConfig extends EnumStateMachineConfigurerAdapter<States, Events> {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
