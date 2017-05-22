@@ -13,6 +13,8 @@ Spring Demo List
 ### Spring StateMachine
 - StateMachineController.java com.agtech.controller.statemachine.*
 - http://localhost:8888/statemachine/demo
+- P-Phase节点；C-Choice节点；
+- 状态机还可以加Guard和Aciton！
 
 ### Ref
 - http://projects.spring.io/spring-statemachine/
