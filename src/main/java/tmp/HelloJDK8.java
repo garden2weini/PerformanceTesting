@@ -19,6 +19,7 @@ public class HelloJDK8 {
 
         hello.helloNashorn();
         hello.helloLambda();
+        hello.helloLambda2();
         hello.helloBase64();
     }
     /**
@@ -65,6 +66,25 @@ public class HelloJDK8 {
             .encodeToString( text.getBytes( StandardCharsets.UTF_8 ) );
         System.out.println( encoded );
     }
+
+    interface IntegerMath {
+        int operation(int a, int b);
+    }
+
+    public int operateBinary(int a, int b, IntegerMath op) {
+        return op.operation(a, b);
+    }
+
+    public void helloLambda2() {
+        HelloJDK8 myApp = new HelloJDK8();
+        IntegerMath addition = (a, b) -> a + b;
+        IntegerMath subtraction = (a, b) -> a - b;
+        System.out.println("40 + 2 = " +
+            myApp.operateBinary(40, 2, addition));
+        System.out.println("20 - 10 = " +
+            myApp.operateBinary(20, 10, subtraction));
+    }
+
 
 
 }

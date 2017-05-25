@@ -15,6 +15,8 @@ Spring Demo List
 - http://localhost:8888/statemachine/demo
 - P-Phase节点；C-Choice节点；
 - 状态机还可以加Guard和Aciton！
+### JDK8 Demos
+HelloJDK8.java
 
 ### Ref
 - http://projects.spring.io/spring-statemachine/
