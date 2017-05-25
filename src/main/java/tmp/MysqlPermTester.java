@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.sql.Connection;
 import java.sql.Statement;
 
-public class Tester {
+public class MysqlPermTester {
     static String url="jdbc:mysql://100.69.199.197:3306/rgs?"
         +"user=root&password=1qaz@WSX&useUnicode=true&characterEncoding=UTF8";
     static int MAX_COUNT = 500;
@@ -22,8 +22,8 @@ public class Tester {
         Class.forName("com.mysql.cj.jdbc.Driver");
         System.out.println("成功加载MySQL驱动程序");
 
-        Tester.insertMysql1();
-        Tester.insertMysql2();
+        MysqlPermTester.insertMysql1();
+        MysqlPermTester.insertMysql2();
     }
 */
     public static void insertMysql1() throws Exception{
